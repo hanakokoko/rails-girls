@@ -1,0 +1,61 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body { padding-top: 100px;}
+ footer { margin-top: 100px; }
+ table, td, th { vertical-align: middle; border: none; }
+ th { border-bottom: 1px solid #DDD; }
+
+ .chat {
+   width: 200px;
+   animation: running-cat 8s infinite;
+   transform: translateX(-200px);
+ }
+
+ @keyframes running-cat {
+   from {
+     transform: translateX(-200px) rotate(0deg);
+   }
+   to {
+     transform: translateX(100vw) rotate(900deg);
+   }
+ }
+
+ .onsenfou {
+   background-color: lightgreen;
+   color: black;
+ }
+
+ .cestcool {
+   background-color: lightblue;
+   color: black;
+ }
+
+
+
+ .chien {
+   width: 200px;
+   animation: jumping-dog 8s infinite;
+   transform: translateX(-200px);
+ }
+
+ @keyframes jumping-dog {
+   from {
+     transform: translateX(100vw) rotate(0deg);
+   }
+   to {
+     transform: translateX(-100vw) rotate(-900deg);
+   }
+ }
